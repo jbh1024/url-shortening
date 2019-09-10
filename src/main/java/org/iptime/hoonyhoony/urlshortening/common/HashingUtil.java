@@ -30,7 +30,7 @@ public class HashingUtil {
      * @param value - Hasing 된 Int 타입 변수 -- Int형
      * @return Base62로 변환된 String ; alias 길이 줄이고 url 뒤에 alias로 사용하기위해 Base62 위해 변환.
      */
-    private static String encodeIntToBase62(int value) {
+    private static String encodeIntToBase62(int value) { //리뷰 후 메소드 변수 및 메소드명 변경.
         final StringBuilder sb = new StringBuilder();
         do {
             int i = value % 62;
